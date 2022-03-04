@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import Nav from './components/nav'
+import About from './components/about'
+import Portfolio from './components/portfolio'
+import Contact from './components/contact'
+import Resume from './components/resume'
+
+import React, {useEffect, useState} from 'react';
+
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('About');
+  const renderPage = () => {
+    switch(currentPage) {
+      case 'About': 
+        return <About/>;
+      case 'Resume': 
+        return <Resume/>;
+      case 'Portfolio':
+        return <Portfolio/>;
+      case 'Contact':
+        return <Contact/>;
+      default: 
+        return <About/>;
+    }
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
+      <main id="main">
+        {renderPage()}
+      </main>
+      {/* <Footer></Footer> */}
+    </>
+    
+  )
+
 }
 
 export default App;
