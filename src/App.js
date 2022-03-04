@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
-  const renderPage = () => {
+  const renderPage = function () {
     switch(currentPage) {
       case 'About': 
         return <About/>;

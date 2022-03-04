@@ -54,7 +54,7 @@ function Contact() {
                 </div>
                 {errorMessage && (
                     <div data-aos="fade-right" data-aos-duration="400">
-                        <p className="error-text fw-light">{errorMessage}</p>
+                        <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
                 <br />

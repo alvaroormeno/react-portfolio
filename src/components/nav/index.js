@@ -11,28 +11,28 @@ function Nav ({currentPage, handlePageChange}) {
                 <ul className="nav-list nav justify-content-end">
                     <li className="mx-2">
                         <a onClick={() => handlePageChange('About')}
-                            className={currentPage === 'About' , "nav-link text-light change"}
-                            href="#About">
+                            className={currentPage === 'About' , "nav-link change"}
+                            href="#About" data-aos="fade-down" data-aos-duration="1500">
                             About Me
                         </a>
                     </li>
                     <li className="mx-2">
                         <a onClick={() => handlePageChange('Portfolio')}
-                            className={currentPage === 'Portfolio' , "nav-link text-light change"}
-                            href="#Portfolio">
+                            className={currentPage === 'Portfolio' , "nav-link change"}
+                            href="#Portfolio" data-aos="fade-down" data-aos-duration="1500">
                             Portfolio
                         </a>
                     </li>
                     <li className="mx-2">
                         <a onClick={() => handlePageChange('Contact')}
-                            className={currentPage === 'Contact' , "nav-link text-light change"}
-                            href="#Portfolio">
+                            className={currentPage === 'Contact' , "nav-link change"}
+                            href="#Portfolio" data-aos="fade-down" data-aos-duration="1500">
                             Contact Me
                         </a>
                     </li>
                     <li className="mx-2">
                     <li className="nav-item" data-aos="fade-down" data-aos-duration="1500">
-                        <a className="nav-link text-light change" rel="noreferrer" href={resume} target="_blank" rel="noreferrer noopener">Resume</a>
+                        <a className="nav-link change" rel="noreferrer" href={resume} target="_blank" rel="noreferrer noopener">Resume</a>
                     </li>
                     </li>
                 </ul>
