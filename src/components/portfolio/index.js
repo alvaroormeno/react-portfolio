@@ -12,6 +12,22 @@ function Portfolio () {
             resource: 'HTML, Bulma (CSS), Javascript,',
             image: require('../../assets/images/the_hype.png')
         },
+        {
+            title: 'Flight for Tonight',
+            description: "A quick and easy to use app that lets you search for flights based on your travel budget",
+            link: 'https://mloercher.github.io/flight-for-tonight/index.html',
+            repo: 'https://github.com/gallolopez1/flight-for-tonight',
+            resource: 'HTML, CSS, Javascript,',
+            image: require('../../assets/images/flight_for_tonight.png')
+        },
+        {
+            title: 'Run Buddy',
+            description: " A website that offers fitness training services.",
+            link: 'https://alvaroormeno.github.io/run-buddy/',
+            repo: 'https://github.com/alvaroormeno/run-buddy',
+            resource: 'HTML, CSS',
+            image: require('../../assets/images/run_buddy.jpeg')
+        },
     ])
     
     

@@ -5,6 +5,7 @@ import About from './components/about'
 import Portfolio from './components/portfolio'
 import Contact from './components/contact'
 import Resume from './components/resume'
+import Footer from './components/footer'
 
 import React, {useEffect, useState} from 'react';
 
@@ -34,7 +35,7 @@ function App() {
       <main id="main">
         {renderPage()}
       </main>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
     
   )
