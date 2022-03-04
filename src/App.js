@@ -9,6 +9,9 @@ import Footer from './components/footer'
 
 import React, {useEffect, useState} from 'react';
 
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -28,6 +31,11 @@ function App() {
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <>
