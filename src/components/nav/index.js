@@ -1,4 +1,5 @@
 import React from "react";
+import resume from '../../assets/resume/aoz_2021_cv.pdf';
 
 function Nav ({currentPage, handlePageChange}) {
 
@@ -29,11 +30,9 @@ function Nav ({currentPage, handlePageChange}) {
                         </a>
                     </li>
                     <li className="mx-2">
-                    <a onClick={() => handlePageChange('Resume')}
-                            className={currentPage === 'Resume' ? "nav-link active text-success change" : "nav-link text-light change"}
-                            href="#Portfolio">
-                            Resume
-                        </a>
+                    <li className="nav-item" data-aos="fade-down" data-aos-duration="1500">
+                        <a className="nav-link btn btn-outline-light text-light change" rel="noreferrer" href={resume} target="_blank" rel="noreferrer noopener">Resume</a>
+                    </li>
                     </li>
                 </ul>
             </nav>
