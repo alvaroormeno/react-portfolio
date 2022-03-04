@@ -31,3 +31,13 @@ body {
   background-color: var(--main-bg-color);
   margin-bottom: 120px;
 }
+
+* {
+  color: var(--light-color);
+}
+
+.about-me {
+  padding-right: 20rem;
+  padding-left: 20rem;
+  text-align: justify;
+}
