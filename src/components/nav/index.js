@@ -4,7 +4,7 @@ import resume from '../../assets/resume/aoz_2021_cv.pdf';
 function Nav ({currentPage, handlePageChange}) {
 
     return(
-        <header className="flex-column sticky-top">
+        <header className=" navbar-main flex-column sticky-top">
             <nav className="' media-nav d-flex align-items-center justify-content-between m-5 mb-0 pb-3 flex-wrap'">
             {/* <h1 className= "nav-link text-light change"><a href="index.html">Alvaro Ormeno</a></h1> */}
             <a onClick={() => handlePageChange('Home')} className= "h2 nav-link text-light change ">Alvaro Ormeno</a>
