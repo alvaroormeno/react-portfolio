@@ -1,15 +1,23 @@
 import React from "react";
+import profile from "../../assets/images/alvaro_ormeno.jpeg"
 
 function About() {
 
     return (
 
         <section className=' about-me d-flex align-items-center justify-content-center flex-column'>
-            <div className="section-title text-center mb-5">
+            <div className="section-title text-center mb-3">
                 <h1>About Me</h1>
             </div>
 
+            <div className="m-5">
+            <img src={profile}  height="300"  alt="profile"/>
+
+            </div>
+
             <div className="">
+
+
 
                 <h3>
                     Hello! My name is Alvaro and im a front end developer in the making!

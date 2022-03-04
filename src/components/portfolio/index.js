@@ -33,9 +33,9 @@ function Portfolio () {
     
     return (
         <section className='mt-5 mb-5' style={{ height: '100vh' }} data-aos="fade-up" data-aos-duration="1600">
-            <h3 className='text-center' >
-                <u>Web Development</u>
-            </h3>
+            <div className='text-center' >
+                <h1 data-testid="h1tag" data-aos="fade-right" data-aos-duration="1500">Portfolio</h1>
+            </div>
             <br />
             <div className="row justify-content-center portfolio" >
                 {projects.map((project) => (
