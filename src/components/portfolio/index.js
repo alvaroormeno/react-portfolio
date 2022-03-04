@@ -28,6 +28,30 @@ function Portfolio () {
             resource: 'HTML, CSS',
             image: require('../../assets/images/run_buddy.jpeg')
         },
+        {
+            title: 'Work Day Schedule',
+            description: "A calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.",
+            link: 'https://alvaroormeno.github.io/work-day-scheduler/',
+            repo: 'https://github.com/alvaroormeno/work-day-scheduler',
+            resource: 'HTML, CSS, JQuery, API',
+            image: require('../../assets/images/work_day.png')
+        },
+        {
+            title: 'Git It Done',
+            description: "A calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.",
+            link: 'https://alvaroormeno.github.io/m6-git-it-done/',
+            repo: 'https://github.com/alvaroormeno/m6-git-it-done',
+            resource: 'HTML, CSS, JQuery, API',
+            image: require('../../assets/images/git_it_done.png')
+        },
+        {
+            title: 'Weather Dashboard',
+            description: "A simple weather application that allows a user to search for a city and in return get today's weather and a 5 day weather forecast. Every searched city is saved as a button and the user can click it to look up again that same city.",
+            link: 'https://alvaroormeno.github.io/weather-dashboard/',
+            repo: 'https://github.com/alvaroormeno/weather-dashboard',
+            resource: 'HTML, CSS, JQuery, API',
+            image: require('../../assets/images/weather_dashboard.png')
+        },
     ])
     
     
@@ -41,14 +65,14 @@ function Portfolio () {
                 {projects.map((project) => (
                     <div className='col-12 col-md-6 col-lg-3 m-2'>
                         <div className="card m-2 h-100" key={project.name}>
-                            <img src={project.image} className="image-card card-img-top" alt={project.name}></img>
+                            <img src={project.image} className="image-card card-img-top " alt={project.name}></img>
                             <div className="card-body">
                                 <h5 className="card-title fw-light text-dark">{project.name}</h5>
                                 <p className="card-text text-dark">{project.description}</p>
                             </div>
-                            <div className='d-flex justify-content-between'>
-                                <a href={project.url} target="_blank" className="btn btn-primary m-2 btn-dark change2">View the project</a>
-                                {/* {project.repoUrl ? <SocialMediaIconsReact borderColor="rgba(0,0,0,0.53)" borderWidth="0" borderStyle="solid" icon="github" iconColor="rgba(13,13,13,0.96)" backgroundColor="rgba(0,0,0,0)" iconSize="3" roundness="20%" url={project.repoUrl} size="54" /> : ""} */}
+                            <div className='d-flex justify-content-around'>
+                                <a href={project.link} target="_blank" className="btn btn-light m-2 change2">View Live Project</a>
+                                <a href={project.repo} target="_blank" className="btn btn-light m-2 change2">View Repo</a>
                             </div>
                         </div>
                     </div>
