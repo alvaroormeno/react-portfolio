@@ -21,12 +21,12 @@ function Portfolio () {
             image: require('../../assets/images/flight_for_tonight.png')
         },
         {
-            title: 'Run Buddy',
-            description: " A website that offers fitness training services.",
-            link: 'https://alvaroormeno.github.io/run-buddy/',
-            repo: 'https://github.com/alvaroormeno/run-buddy',
+            title: 'Concious Shopper',
+            description: " An easy to use app that will let customers and business owners search, review, vote and share small family and minority owned businesses",
+            link: 'https://enigmatic-basin-52191.herokuapp.com/',
+            repo: 'https://github.com/mavisyupyup1/project-3-group-d',
             resource: 'HTML, CSS',
-            image: require('../../assets/images/run_buddy.jpeg')
+            image: require('../../assets/images/cshopper.png')
         },
         {
             title: 'Work Day Schedule',

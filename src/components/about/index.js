@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../../assets/images/alvaro_ormeno.jpeg"
+import profile2 from "../../assets/images/alvaro_ormeno22.jpeg"
 
 function About() {
 
@@ -11,7 +12,12 @@ function About() {
             </div>
 
             <div className="m-5">
+
+
             <img src={profile}  height="300"  alt="profile"/>
+            
+
+
 
             </div>
 
